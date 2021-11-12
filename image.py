@@ -6,12 +6,8 @@ KV = '''
 MDBoxLayout:
     orientation: "vertical"
 
-    MDToolbar:
-        title: 'Comidas Tipicas'
-        elevation: 10
-        left_action_items: [["menu", lambda x: x]]
-        md_bg_color: app.theme_cls.primary_color
-
+   
+    
     ScreenManager:
         id: manager
 
@@ -25,7 +21,11 @@ MDBoxLayout:
 
         MDScreen:
             name: "two"
-
+            MDToolbar:
+                title: 'Brasil'
+                elevation: 10
+                left_action_items: [["menu", lambda x: x]]
+                md_bg_color: app.theme_cls.primary_color
             ScrollView:
                 do_scroll_x: False
 
