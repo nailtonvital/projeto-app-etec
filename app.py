@@ -4,6 +4,9 @@ from kivymd.app import MDApp
 from kivymd.uix.button import MDFlatButton
 from kivymd.uix.dialog import MDDialog
 from kivymd.uix.list import OneLineAvatarIconListItem
+from kivy.core.window import Window
+
+Window.size = (300, 600)
 
 KV = '''
 #:import md_icons kivymd.icon_definitions.md_icons
@@ -18,49 +21,50 @@ ScreenManager:
     id: manager
     
     MDScreen:
-        name: "one"
+        name: "inicio"
         
-        #BG-IMG
-        FitImage:
-            source: 'images/rio.jpg'
-        #TITLE
+        # backgroud image
+       
+        # title
         MDLabel:
-            text: "MDLabel"
             halign: "center"
             pos_hint: {'center_y': .75}
-            text: f"[color=#ffffff] [font=RobotoMedium]Brazil/Ecuador Tour[/font] [font=Icons][/font][/color]"
+            text: f"[font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Brazil/Ecuador\\nTour[/font]"
             markup: True
             font_size: 32
             
     
-        #LANG
-        MDFillRoundFlatButton:
-            pos_hint: {'center_x': .5, 'center_y': .3}
-            text: "LANGUAGE"
+        # language
+        MDRoundFlatButton:
+            pos_hint: {'center_x': .5, 'center_y': .27}
+            text: f"[font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Idioma[/font]"
+            size_hint_x: 0.8
             on_release: app.show_confirmation_dialog()
 
-        #BOTAO-START
+        # start button
         MDFillRoundFlatButton:
             pos_hint: {'center_x': .5, 'center_y': .2}
-            text: "Começar Tour"
+            text: f"[font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Começar Tour[/font]"
             size_hint_x: 0.8
-            on_release: manager.current = "two"
+            on_release: manager.current = "home"
             
             
-    #tela2
+    # country choose
     MDScreen:
-        name: "two"
+        name: "home"
         
         MDToolbar:
             id: toolbar
-            title: "Selecione um País"
-            elevation: 10
+            title: f"[color=#ffffff][font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Selecione um País:[/font][/color]"
             pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
 
         MDSwiper:
             size_hint_y: None
             height: root.height - toolbar.height - dp(40)
             y: root.height - self.height - toolbar.height - dp(20)
+            items_spacing:  "8dp"
     
             MDSwiperItem
                 RelativeLayout:
@@ -78,7 +82,7 @@ ScreenManager:
                             icon: "earth"
                             user_font_size: "30sp"
                             opposite_colors: True
-                            text: "Brazil"
+                            text: "\\nBrazil\\n"
                             size_hint_x: 1
             MDSwiperItem
                 RelativeLayout:
@@ -96,8 +100,12 @@ ScreenManager:
                             icon: "earth"
                             user_font_size: "30sp"
                             opposite_colors: True
-                            text: "Ecuador"
+                            text: "\\nEcuador\\n"
                             size_hint_x: 1
+                            
+    #Brasil
+    MDScreen:
+        name: "brazil"
         
 '''
 
@@ -105,15 +113,16 @@ ScreenManager:
 class Tour(MDApp):
     dialog = None
 
-    # carrega a interface dentro da variavel KV
+    # load interface tht are inside KV variable
     def build(self):
+        self.theme_cls.theme_style = "Dark"
         return Builder.load_string(KV)
 
-    # fecha o poupup/modal
+    # close poupup/modal
     def dialog_close(self, *args):
         self.dialog.dismiss(force=True)
 
-    # selecoes para os idiomas
+    # language choose
     def show_confirmation_dialog(self):
         if not self.dialog:
             self.dialog = MDDialog(

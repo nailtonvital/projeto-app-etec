@@ -6,8 +6,10 @@ MDBoxLayout:
     orientation: "vertical"
 
     MDToolbar:
+        id: toolbar
         title: "Brasil"
         left_action_items: [["menu", "This is the navigation"]]
+        anchor_title: "center"
 
     ScrollView:
         MDList:

@@ -10,17 +10,7 @@ MDBoxLayout:
     
     ScreenManager:
         id: manager
-
         MDScreen:
-            name: "one"
-
-            MDRaisedButton:
-                pos_hint: {"center_x": .5, "center_y": .55}
-                on_release: manager.current = "two"
-                text: "Open Grid"
-
-        MDScreen:
-            name: "two"
             MDToolbar:
                 title: 'Brasil'
                 elevation: 10
@@ -40,9 +30,11 @@ MDBoxLayout:
                     SmartTileWithLabel:
                         text: "Feijoada"
                         source: "images/comidas/feijoada.jpg"
+                        radius: 15, 15, 15, 15
                     SmartTileWithLabel:
                         text: "Strogonoff"
                         source: "images/comidas/stro.jpg"
+                        radius: 15, 15, 15, 15
                     SmartTileWithLabel:
                         text: "Coxinha"
                         source: "images/comidas/coxinha.jpg"

@@ -1,42 +1,115 @@
+from kivy.uix.modalview import ModalView
 from kivy.lang import Builder
+from kivy.loader import Loader
+from kivy.uix.image import AsyncImage
 from kivymd.app import MDApp
+from kivymd.uix.card import MDCard
+from kivy.core.window import Window
+
+Window.size = (300, 600)
 
 KV = '''
-MDBoxLayout:
-    orientation: "vertical"
-
-    MDToolbar:
-        title: "Brasil"
-        left_action_items: [["menu", "This is the navigation"]]
-
-    ScrollView:
-        MDList:
-            OneLineIconListItem:
-                text: "Comidas Tipicas"
-                IconLeftWidget:
-                    icon: "food-turkey"
+MDScreen: 
+    MDFloatLayout:
+        MDFloatLayout:
+            mb_bg_color: 1,1,1,1
+            MDLabel:
+                text: "Brazil"
+                font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Poppins-SemiBold"
+                font_size: "35sp"
+                pos_hint: {"center_x": .56, "center_y": .92}
+        
+            MDLabel:
+                text: "País"
+                font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Poppins-Thin"
+                font_size: "18sp"
+                text_color: (102, 103, 105)
+                pos_hint: {"center_x": .565, "center_y": .87}
+                
+        MDLabel:
+            text: "Categorias"
+            font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular"
+            font_size: "18sp"
+            text_color: (102, 103, 105)
+            pos_hint: {"center_x": .565, "center_y": .78}
+        
+        ScrollView:
+            do_scroll_y: False
+            do_scroll_x: True
+            pos_hint:{"center_y": .65}
+            size_hint_y: .2
+            bar_width: 0
+            GridLayout:
+                size_hint_x: None
+                height: self.minimum_height
+                width: self.minimum_width
+                rows: 1
+                spacing: 8
+                padding: 18, 0
+                MDFillRoundFlatButton:
+                    text: f"[color=#ffffff] [font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Culinária[/font] [/color]"
+                MDFillRoundFlatButton:
+                    text: f"[color=#ffffff] [font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Costumes[/font] [/color]"
                     
-            OneLineIconListItem:
-                text: "Costumes"
-                IconLeftWidget:
-                    icon: "account-group"
+                MDFillRoundFlatButton:
+                    text: f"[color=#ffffff] [font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Pontos Turisticos[/font] [/color]"
+                
+                MDFillRoundFlatButton:
+                    text: f"[color=#ffffff] [font=C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular]Pessoas Influentes[/font] [/color]"
+                
+        
+        MDLabel:
+            text: "Capitais"
+            font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular"
+            font_size: "18sp"
+            text_color: (102, 103, 105)
+            pos_hint: {"center_x": .565, "center_y": .62}
+        ScrollView:
+            do_scroll_y: False
+            do_scroll_x: True
+            pos_hint:{"center_y": .44}
+            size_hint_y: .3
+            bar_width: 0
+            GridLayout:
+                size_hint_x: None
+                height: self.minimum_height
+                width: self.minimum_width
+                rows: 1
+                spacing: 10
+                padding: 18, 0
+                Image:
+                    source: "images/Cidades/rj-mini.jpg"
+                    size_hint: None, None
+                    size: "120dp", "180dp"
+                    radius: [20,]
+                Image:
+                    source: "images/Cidades/rj-mini.jpg"
+                    size_hint: None, None
+                    size: "120dp", "180dp"
+                    radius: [20,]
+                Image:
+                    source: "images/Cidades/rj-mini.jpg"
+                    size_hint: None, None
+                    size: "120dp", "180dp"
                     
-            OneLineIconListItem:
-                text: "Pontos Turisticos"
-                IconLeftWidget:
-                    icon: "city-variant"
+        MDLabel:
+            text: "Sudeste"
+            font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular"
+            font_size: "18sp"
+            text_color: (102, 103, 105)
+            pos_hint: {"center_x": .565, "center_y": .25}
+        
                     
-            OneLineIconListItem:
-                text: "Pessoas Influentes"
-                IconLeftWidget:
-                    icon: "account-tie-voice"
-            
 '''
 
 
-class MainApp(MDApp):
+
+
+
+class Example(MDApp):
     def build(self):
+        self.theme_cls.theme_style = "Dark"  # "Light"
         return Builder.load_string(KV)
 
 
-MainApp().run()
+Example().run()
