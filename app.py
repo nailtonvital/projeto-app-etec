@@ -49,6 +49,17 @@ ScreenManager:
             size_hint_x: 0.8
             on_release: manager.current = "pais"
         
+        MDLabel:
+            halign: "center"
+            pos_hint: {'center_y': .128}
+            text: f"[font=Fonts/Montserrat-Regular]Modo Escuro[/font]"
+            markup: True
+            font_size: 10
+        MDSwitch:
+            pos_hint: {'center_x': .5, 'center_y': .10}
+            on_active: app.check(*args)
+            size: "40dp", "30dp"
+        
             
             
     # country choose
@@ -57,9 +68,9 @@ ScreenManager:
         
         MDToolbar:
             id: toolbar
-            title: f"[color=#ffffff][font=Fonts/Montserrat-Regular]Selecione um País:[/font][/color]"
+            title: f"[font=Fonts/Montserrat-Regular]Selecione um País:[/font]"
             pos_hint: {"top": 1}
-            md_bg_color: [0,0,1,0]
+            md_bg_color: [0,0,0,1]
             anchor_title: "center"
 
         MDSwiper:
@@ -260,8 +271,15 @@ class Tour(MDApp):
 
     # load interface tht are inside KV variable
     def build(self):
-        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.theme_style = "Light"
         return Builder.load_string(KV)
+
+    def check(self, checkbox, value):
+        if value:
+            self.theme_cls.theme_style = "Dark"
+        else:
+            self.theme_cls.theme_style = "Light"
+
 
     # close poupup/modal
     def dialog_close(self, *args):
