@@ -1,0 +1,88 @@
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Países`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Países` (
+`idPaíses` INTEGER NOT NULL PRIMARY KEY,
+`País` TEXT NULL,
+`Imagem` BLOB NULL
+);
+-- -----------------------------------------------------
+-- Table `mydb`.`Estados`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Estados` (
+`idEstados` INTEGER NOT NULL,
+`Capital` TEXT NULL,
+`Estado` TEXT NULL,
+`Sobre` TEXT NULL,
+`Imagem` BLOB NULL,
+`Países_idPaíses` INTEGER NOT NULL,
+PRIMARY KEY (`idEstados`),
+INDEX `fk_Estados_Países_idx` (`Países_idPaíses` ASC) VISIBLE,
+CONSTRAINT `fk_Estados_Países`
+FOREIGN KEY (`Países_idPaíses`)
+REFERENCES `mydb`.`Países` (`idPaíses`)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Pontos Turísticos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Pontos Turísticos` (
+`idPontos` INTEGER NOT NULL,
+`Nome` TEXT NULL,
+`Sobre` TEXT NULL,
+`Imagem` BLOB NULL,
+`Países_idPaíses` INTEGER NOT NULL,
+PRIMARY KEY (`idPontos`),
+INDEX `fk_Pontos Turísticos_Países1_idx` (`Países_idPaíses` ASC) VISIBLE,
+CONSTRAINT `fk_Pontos Turísticos_Países1`
+FOREIGN KEY (`Países_idPaíses`)
+REFERENCES `mydb`.`Países` (`idPaíses`)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Costumes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Costumes` (
+`idCostumes` INTEGER NOT NULL,
+`Nome` TEXT NULL,
+`Sobre` TEXT NULL,
+`Imagem` BLOB NULL,
+`Países_idPaíses` INTEGER NOT NULL,
+PRIMARY KEY (`idCostumes`),
+INDEX `fk_Costumes_Países1_idx` (`Países_idPaíses` ASC) VISIBLE,
+CONSTRAINT `fk_Costumes_Países1`
+FOREIGN KEY (`Países_idPaíses`)
+REFERENCES `mydb`.`Países` (`idPaíses`)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Comidas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Comidas` (
+`idComidas` INTEGER NOT NULL,
+`Nome` TEXT NULL,
+`Sobre` TEXT NULL,
+`Imagem` BLOB NULL,
+`Países_idPaíses` INTEGER NOT NULL,
+PRIMARY KEY (`idComidas`),
+INDEX `fk_Comidas_Países1_idx` (`Países_idPaíses` ASC) VISIBLE,
+CONSTRAINT `fk_Comidas_Países1`
+FOREIGN KEY (`Países_idPaíses`)
+REFERENCES `mydb`.`Países` (`idPaíses`)
+HECKS;
