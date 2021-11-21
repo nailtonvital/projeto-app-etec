@@ -218,7 +218,7 @@ ScreenManager:
             MDIconButton:
                 icon:"arrow-left"
                 pos_hint: {"center_y": .95}
-                #on_release: manager.current = "brasil"
+                on_release: manager.current = "brasil"
             MDLabel:
                 id: title
                 text: "Comidas"

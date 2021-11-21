@@ -32,16 +32,17 @@ MDScreen:
             MDList:
                 OneLineListItem:
                     text: "Programação"
-                TwoLineIconListItem:
+                ThreeLineIconListItem:
                     text: "Vital, Nailton"
                     secondary_text: "Full-Stack Developer"
+                    tertiary_text: "Software architect"
                 
                     IconLeftWidget:
                         icon: "github"
                         
                 ThreeLineIconListItem:
                     text: "Oliveira, Maicon"
-                    secondary_text: "Database/Back-end Developer"
+                    secondary_text: "Back-end Database Developer"
                     tertiary_text: "Team-Represent"
                 
                     IconLeftWidget:
