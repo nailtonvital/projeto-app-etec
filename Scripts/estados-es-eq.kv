@@ -1,0 +1,1968 @@
+MDScreen:
+    name:"Azuay es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Cuenca"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Azuay, cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Azuay es una provincia del sur de Ecuador situada en la región geográfica de la Sierra en la Cordillera de los Andes. Su capital es la ciudad de Cuenca. En esta provincia se encuentra la presa Daniel Palacios, en el río Paute, que genera electricidad para el país."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Bolívar es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Guaranda"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Bolívar, E cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Bolívar es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Guaranda. Bolívar no tiene elevaciones importantes, salvo el volcán Chimborazo."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Cañar es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Azogues"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Cañar, cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Cañar es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Azogues. La provincia destaca como uno de los destinos turísticos más importantes del país, destacando la Fortaleza de Ingapirca, la Laguna de Culebrillas y la ciudad de Azogues."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Carchi es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Tulcán"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Carchi, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Carchi es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Tulcán. Al norte, los ríos Carchi y San Juan sirven de frontera con Colombia, al sur y al este limita con la provincia de Imbabura y al oeste con la provincia de Esmeraldas."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Chimborazo es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Riobamba"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Chimborazo, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Chimborazo es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Riobamba. La provincia tiene como atractivo el volcán Chimborazo."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Cotopaxi es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Latacunga"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Cotopaxi, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Cotopaxi es una provincia situada en el centro-norte de Ecuador, en la región geográfica de la Sierra. Su capital es la ciudad de Latacunga. Lleva el nombre del volcán Cotopaxi."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"El Oro es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Machala"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "El Oro, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "El Oro es una provincia situada en el suroeste de Ecuador, en la región geográfica de la Costa. Limita al norte con las provincias de Guayas y Azuay, al noroeste con el Golfo de Guayaquil y al sur y al este con la provincia de Loja. Su capital es la ciudad de Machala, la cuarta del país, considerada la "capital mundial del plátano"."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Esmeraldas es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Esmeraldas"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Esmeraldas, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Esmeraldas es una provincia situada en la costa noroeste de Ecuador, en la región geográfica de la Costa, es conocida popularmente como la "provincia verde". Su capital es la ciudad de Esmeraldas"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Galápagos es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Puerto Baquerizo Moreno"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Galápagos, cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Galápagos es una provincia de Ecuador situada en la región geográfica Insular. Su capital es la ciudad de Puerto Baquerizo Moreno. La provincia corresponde al territorio de las islas Galápagos."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Guayas es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Guayaquil"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Guayas, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Guayas es una provincia de Ecuador situada en la región geográfica de la Costa. Su capital es la ciudad de Guayaquil. Lleva el nombre del río Guayas que atraviesa la provincia. Cerca del 30% de la población de Ecuador vive en la provincia de Guayas."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Imbabura es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Ibara"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Imbabura, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Imbabura es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Ibarra. El volcán Imbabura, situado en la provincia, tiene 4.609 metros de altura. "
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Loja es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Loja"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Loja, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Loja es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Loja, fundada el 8 de diciembre de 1546 por Alonso de Mercadillo."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Los Ríos es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Babahoyo"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Los Ríos, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Los Ríos es una provincia de Ecuador situada en la región geográfica de la Costa. Su capital es la ciudad de Babahoyo. Su nombre deriva de la amplia red hidrográfica que atraviesa su territorio. Los Ríos es la principal zona agrícola del país por sus fértiles tierras."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Manabí es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Portoviejo"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Manabí, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Manabí es una provincia situada en el noroeste de Ecuador, en la región geográfica de la Costa. Su capital es la ciudad de Portoviejo. Manabí limita al oeste con el océano Pacífico. Limita al norte con la provincia de Esmeraldas, al este con las provincias de Pichincha, Los Ríos y Guayas, y al sur con la provincia del Guayas."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Morona Santiago es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Macas"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Morona Santiago, E cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Morona-Santiago es una provincia de Ecuador situada en la región geográfica amazónica. Su capital es la ciudad de Macas. Se creó en 1953 cuando se escindió de la provincia de Santiago-Zamora. El río Upano atraviesa la provincia de norte a sur."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Napo es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Tena"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Napo, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Napo es una provincia de Ecuador situada en la región geográfica amazónica. Su capital es la ciudad de Tena. La provincia está cortada por el río Napo, un afluente del río Amazonas."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Orellana es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Puerto Francisco de Orellana"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Orellana, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Orellana es una provincia de Ecuador situada en la región geográfica amazónica. Su capital es la ciudad de Francisco de Orellana. Se creó en 1998 cuando se separó de la provincia de Napo."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Pastaza es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Puyo"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Pastaza, E cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Pastaza es la provincia más grande de Ecuador situada en la región geográfica amazónica. Su capital es la ciudad de Puyo, fundada el 12 de mayo de 1899. Lleva el nombre del río Pastaza, que separa la provincia de la de Morona-Santiago."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Pichincha es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Quito"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Pichincha, cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Pichincha es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Quito. Lleva el nombre del volcán Pichincha."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Santa Elena es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Santa Elena"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Santa Elena, E cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Santa Elena es una provincia de la costa ecuatoriana creada el 7 de noviembre de 2007, en respuesta al plebiscito realizado en octubre de ese año, y es la más joven de las 24 provincias del país, conformada por territorios que antes pertenecían a la provincia del Guayas, al oeste de ésta."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Santo Domingo de los Tsáchilas es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Santo Domingo de los Colorados"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Santo Domingo de los Tsáchilas, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Santo Domingo de los Tsáchilas es una provincia de la República de Ecuador. Su capital es Santo Domingo de los Colorados, que tiene una población estimada de 415.000 habitantes en 2011. Santo Domingo es la decimotercera provincia más poblada y la vigésima con mayor superficie de Ecuador."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Sucumbiós es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Nueva Loja"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Sucumbiós, cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Sucumbíos es una provincia de Ecuador situada en la región geográfica amazónica. Su capital es la ciudad de Nueva Loja, la mayor ciudad de la provincia. Sucumbíos es la única provincia de Ecuador que limita con dos países diferentes."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Tungurahua es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Ambato"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Tungurahua, E  cuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Tungurahua es una provincia de Ecuador situada en la región geográfica de la Sierra. Su capital es la ciudad de Ambato. Su nombre proviene del volcán Tungurahua."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+
+MDScreen:
+    name:"Zamora-Chinchipe es-eq"
+    MDFloatLayout:
+        FitImage:
+            id: bg_image
+        MDToolbar:
+            id: toolbar
+            text: "df"
+            pos_hint: {"top": 1}
+            md_bg_color: [0,0,1,0]
+            anchor_title: "center"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "comidas"
+        MDCard:
+            orientation: "vertical"
+            size_hint: .94, None
+            height: box_top.height + box_bottom.height
+            focus_behavior: True
+            ripple_behavior: True
+            pos_hint: {"center_x": .5, "center_y": .19}
+            radius: 15, 15, 15, 15
+            elevation: 10
+
+            MDBoxLayout:
+                id: box_top
+                spacing: "20dp"
+                adaptive_height: True
+                padding: "10dp", "20dp", "10dp", "10dp"
+
+                MDBoxLayout:
+                    id: text_box
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp", "10dp", 0, 0
+
+                    MDLabel:
+                        text: "Zamora"
+                        font_name: "../assets/Fonts/Poppins-SemiBold"
+                        font_size: "25sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: "0"
+
+                    MDLabel:
+                        text: "Zamora-Chinchipe, Ecuador"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "10sp"
+                        text_color: (102, 103, 105)
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_x": .505}
+
+            MDBoxLayout:
+                id: box_bottom
+                orientation: "vertical"
+                adaptive_height: True
+                padding: "20dp", "5dp", "20dp", "20dp"
+
+                MDLabel:
+                    text: "Sobre"
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    font_size: "14sp"
+                    theme_text_color: "Primary"
+                    bold: True
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+
+                MDLabel:
+                    text: "Zamora-Chinchipe es una provincia ecuatoriana ubicada en la región geográfica amazónica. Su capital es la ciudad de Zamora. Zamora-Chinchipe limita al norte con la provincia de Morona-Santiago, al oeste con la provincia de Loja, al noroeste con la provincia de Azuay y al este, sur y suroeste con Perú."
+                    font_name: "../assets/Fonts/Montserrat-Regular"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    pos_hint: {"center_y": .5}
+                    theme_text_color: "Primary"
+                    font_size: "10sp"
+

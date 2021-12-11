@@ -5,92 +5,180 @@ from kivy.core.window import Window
 Window.size = (300, 600)
 
 KV = '''
-
-MDFloatLayout:
-    FitImage:
-        id: bg_image
-        source: "images/Comidas/brigadeiro.jpg" 
-    MDToolbar:
-        id: toolbar
-        text: "df"
-        pos_hint: {"top": 1}
-        md_bg_color: [0,0,1,0]
-        anchor_title: "center"
-    MDCard:
-        orientation: "vertical"
-        size_hint: .94, None
-        height: box_top.height + box_bottom.height
-        focus_behavior: True
-        ripple_behavior: True
-        pos_hint: {"center_x": .5, "center_y": .19}
-        radius: 15, 15, 15, 15
-        elevation: 10
-
-        MDBoxLayout:
-            id: box_top
-            spacing: "20dp"
-            adaptive_height: True
-            padding: "10dp", "20dp", "10dp", "10dp"
-
-            MDBoxLayout:
-                id: text_box
+ScreenManager:
+    id: "manager"
+    MDScreen:
+        name:"Rio de Janeiro pt-br"
+        MDFloatLayout:
+            MDFloatLayout:
+                FitImage:
+                    id: bg_image
+                    source: "../assets/images/rio.jpg"
+                MDToolbar:
+                    id: toolbar
+                    text: "df"
+                    pos_hint: {"top": 1}
+                    md_bg_color: [0,0,1,0]
+                    anchor_title: "center"
+                MDIconButton:
+                    icon:"arrow-left"
+                    pos_hint: {"center_y": .95}
+                    on_release: manager.current = "Acre pt-br"
+                MDCard:
+                    orientation: "vertical"
+                    size_hint: .94, None
+                    height: box_top.height + box_bottom.height
+                    focus_behavior: True
+                    ripple_behavior: True
+                    pos_hint: {"center_x": .5, "center_y": .19}
+                    radius: 15, 15, 15, 15
+                    elevation: 10
+        
+                    MDBoxLayout:
+                        id: box_top
+                        spacing: "20dp"
+                        adaptive_height: True
+                        padding: "10dp", "20dp", "10dp", "10dp"
+        
+                        MDBoxLayout:
+                            id: text_box
+                            orientation: "vertical"
+                            adaptive_height: True
+                            spacing: "10dp"
+                            padding: "10dp", "10dp", 0, 0
+        
+                            MDLabel:
+                                text: "Rio de Janeiro"
+                                font_name: "../assets/Fonts/Poppins-SemiBold"
+                                font_size: "25sp"
+                                theme_text_color: "Primary"
+                                bold: True
+                                size_hint_y: None
+                                height: "0"
+        
+                            MDLabel:
+                                text: "Rio de Janeiro, Brasil"
+                                font_name: "../assets/Fonts/Montserrat-Regular"
+                                font_size: "10sp"
+                                text_color: (102, 103, 105)
+                                size_hint_y: None
+                                height: self.texture_size[1]
+                                pos_hint: {"center_x": .505}
+        
+                    MDBoxLayout:
+                        id: box_bottom
+                        orientation: "vertical"
+                        adaptive_height: True
+                        padding: "20dp", "5dp", "20dp", "20dp"
+        
+                        MDLabel:
+                            text: "Sobre"
+                            font_name: "../assets/Fonts/Montserrat-Regular"
+                            font_size: "14sp"
+                            theme_text_color: "Primary"
+                            bold: True
+                            size_hint_y: None
+                            height: self.texture_size[1]
+                            pos_hint: {"center_y": .5}
+                            theme_text_color: "Primary"
+        
+                        MDLabel:
+                            text: "O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume."
+                            font_name: "../assets/Fonts/Montserrat-Regular"
+                            size_hint_y: None
+                            height: self.texture_size[1]
+                            pos_hint: {"center_y": .5}
+                            theme_text_color: "Primary"
+                            font_size: "10sp"
+    MDScreen:
+        name:"Acre pt-br"
+        MDFloatLayout:
+            FitImage:
+                id: bg_image
+            MDToolbar:
+                id: toolbar
+                text: "df"
+                pos_hint: {"top": 1}
+                md_bg_color: [0,0,1,0]
+                anchor_title: "center"
+            MDIconButton:
+                icon:"arrow-left"
+                pos_hint: {"center_y": .95}
+                on_release: manager.current = "Rio de Janeiro pt-br"
+            MDCard:
                 orientation: "vertical"
-                adaptive_height: True
-                spacing: "10dp"
-                padding: "10dp", "10dp", 0, 0
-                
+                size_hint: .94, None
+                height: box_top.height + box_bottom.height
+                focus_behavior: True
+                ripple_behavior: True
+                pos_hint: {"center_x": .5, "center_y": .19}
+                radius: 15, 15, 15, 15
+                elevation: 10
 
-                MDLabel:
-                    text: "Brigadeiro"
-                    font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular"
-                    font_size: "24sp"
-                    theme_text_color: "Primary"
-                    bold: True
-                    size_hint_y: .1
-                    height: "0"
+                MDBoxLayout:
+                    id: box_top
+                    spacing: "20dp"
+                    adaptive_height: True
+                    padding: "10dp", "20dp", "10dp", "10dp"
 
-                MDLabel:
-                    text: "Comida Típica"
-                    font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular"
-                    font_size: "10sp"
-                    text_color: (102, 103, 105)
-                    size_hint_y: None
-                    height: self.texture_size[1]
-                    pos_hint: {"center_x": .505}
-                    
+                    MDBoxLayout:
+                        id: text_box
+                        orientation: "vertical"
+                        adaptive_height: True
+                        spacing: "10dp"
+                        padding: "10dp", "10dp", 0, 0
 
-        MDBoxLayout:
-            id: box_bottom
-            orientation: "vertical"
-            adaptive_height: True
-            padding: "20dp", "5dp", "20dp", "20dp"
+                        MDLabel:
+                            text: "Rio Branco"
+                            font_name: "../assets/Fonts/Poppins-SemiBold"
+                            font_size: "25sp"
+                            theme_text_color: "Primary"
+                            bold: True
+                            size_hint_y: None
+                            height: "0"
 
-            MDLabel:
-                text: "Sobre"
-                font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular"
-                font_size: "18sp"
-                theme_text_color: "Primary"
-                bold: True
-                size_hint_y: None
-                height: self.texture_size[1]
-                pos_hint: {"center_y": .5}
-                theme_text_color: "Primary"
-                
-            MDLabel:
-                text: "O brigadeiro é um doce típico da culinária brasileira, com origem no Rio de Janeiro, que rapidamente se difundiu pelo Brasil, tornando-se comum em todo o país a sua presença em festas de aniversário, junto com doces como o cajuzinho e o beijinho. É conhecido também no Rio Grande do Sul pelo nome de negrinho."
-                font_name: "C:/Users/Nailton/AppData/Local/Microsoft/Windows/Fonts/Montserrat-Regular"
-                size_hint_y: None
-                height: self.texture_size[1]
-                pos_hint: {"center_y": .5}
-                theme_text_color: "Primary"
-                font_size: "10sp"
-                
+                        MDLabel:
+                            text: "Acre, Brasil"
+                            font_name: "../assets/Fonts/Montserrat-Regular"
+                            font_size: "10sp"
+                            text_color: (102, 103, 105)
+                            size_hint_y: None
+                            height: self.texture_size[1]
+                            pos_hint: {"center_x": .505}
+
+                MDBoxLayout:
+                    id: box_bottom
+                    orientation: "vertical"
+                    adaptive_height: True
+                    padding: "20dp", "5dp", "20dp", "20dp"
+
+                    MDLabel:
+                        text: "Sobre"
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        font_size: "14sp"
+                        theme_text_color: "Primary"
+                        bold: True
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_y": .5}
+                        theme_text_color: "Primary"
+
+                    MDLabel:
+                        text: "Acre é um estado no noroeste do Brasil, na Floresta Amazónica. É conhecido pela quantidade de árvores-da-borracha e castanhas-do-brasil. Na fronteira peruana, a oeste, o Parque Nacional da Serra do Divisor possui montanhas elevadas e várias quedas de água, além de diversas espécies animais, como tatus-gigantes, tapires e aves raras."
+                        font_name: "../assets/Fonts/Montserrat-Regular"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        pos_hint: {"center_y": .5}
+                        theme_text_color: "Primary"
+                        font_size: "10sp"
+
                 
 '''
 
 
 class Test(MDApp):
     def build(self):
+        self.theme_cls.theme_style = "Light"  # "Light"
         return Builder.load_string(KV)
 
 

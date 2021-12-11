@@ -1,81 +1,30 @@
 from kivymd.app import MDApp
 from kivy.lang import Builder
+import sqlite3
 
 KV = '''
-MDScreen: 
-    name: "gallery"
-    MDFloatLayout:
-        orientation: "vertical"
-        MDIconButton:
-            icon:"arrow-left"
-            pos_hint: {"center_y": .95}
-            #on_release: manager.current = "brasil"
+MDScreen:
+    MDLabel:
+        text:"Categories"
+        pos_hint:{"center_x": .56, "center_y": .4}
+        font_size:"18sp"
+    MDGridLayout:
+        cols: 2
+        size_hint: .9, .2
+        pos_hint:{"center_x": .5, "center_y": .26}
+        spacing: 10
         MDLabel:
-            id: title
-            text: "Comidas"
-            pos_hint: {"center_y": .95}
-            halign:"center"
-            font_name:"../assets/Fonts/Poppins-Regular"
-            font_size: "20sp"
-        ScrollView:
-            do_scroll_y: True
-            do_scroll_x: False
-            pos_hint:{"center_x": .5, "y": 0}
-            size_hint_y: .9
-            bar_width: 0
-            MDGridLayout:
-                cols: 2
-                row_default_height: (self.width - self.cols*self.spacing[0]) / self.cols
-                row_force_default: True
-                adaptive_height: True
-                padding: dp(4), dp(4)
-                spacing: dp(4)
-        
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
-                SmartTileWithLabel:
-                    source: "../assets/images/comidas/brigadeiro.jpg"
-                    text: "Rio"
-                    font_name: "../assets/Fonts/Poppins-Regular"
-                    
+            text:"Nature"
+            color: 1,1,1,1
+            canvas.before:
+                Color:
+                    rgb:1,1,1,1
+                RoundedRectangle:
+                    size: self.size
+                    pos:self.pos
+                    radius:[10]
+                    source:"../assets/images/equador.png"
+                        
 '''
 
 

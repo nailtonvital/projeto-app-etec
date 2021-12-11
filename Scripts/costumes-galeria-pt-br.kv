@@ -1,0 +1,110 @@
+#galeria-costumes-pt-br
+        MDScreen: 
+            name: "costumes-pt-br"
+            MDFloatLayout:
+                orientation: "vertical"
+                MDIconButton:
+                    icon:"arrow-left"
+                    pos_hint: {"center_y": .95}
+                    on_release: manager.current = "pt-br"
+                MDLabel:
+                    id: title
+                    text: "Costumes"
+                    pos_hint: {"center_y": .95}
+                    halign:"center"
+                    font_name:"assets/Fonts/Poppins-Regular"
+                    font_size: "20sp"
+                ScrollView:
+                    do_scroll_y: True
+                    do_scroll_x: False
+                    pos_hint:{"center_x": .5, "y": 0}
+                    size_hint_y: .9
+                    bar_width: 0
+                    MDGridLayout:
+                        cols: 2
+                        row_default_height: (self.width - self.cols*self.spacing[0]) / self.cols
+                        row_force_default: True
+                        adaptive_height: True
+                        padding: dp(4), dp(4)
+                        spacing: dp(4)
+
+                        SmartTileWithLabel:
+                            text: "Carnaval:"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Carnaval:"
+                        SmartTileWithLabel:
+                            text: "Festa Junina"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festa Junina"
+                        SmartTileWithLabel:
+                            text: "Bumba meu boi"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Bumba meu boi"
+                        SmartTileWithLabel:
+                            text: "Frevo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Frevo"
+                        SmartTileWithLabel:
+                            text: "Folia de Reis"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Folia de Reis"
+                        SmartTileWithLabel:
+                            text: "Festival de Parintins"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festival de Parintins"
+                        SmartTileWithLabel:
+                            text: "Círio de Nazaré"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Círio de Nazaré"
+                        SmartTileWithLabel:
+                            text: "Festa do Divino"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festa do Divino"
+                        SmartTileWithLabel:
+                            text: "Congada"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Congada"
+                        SmartTileWithLabel:
+                            text: "Capoeira:"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Capoeira:"
+                        SmartTileWithLabel:
+                            text: "Samba"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Samba"
+                        SmartTileWithLabel:
+                            text: "Sertanejo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Sertanejo"
+                        SmartTileWithLabel:
+                            text: "Bossa Nova"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Bossa Nova"
+                        SmartTileWithLabel:
+                            text: "Funk “Brasileiro”"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Funk “Brasileiro”"
+                        SmartTileWithLabel:
+                            text: "Futebol"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Futebol"
+                        SmartTileWithLabel:
+                            text: "Religiões Cristãs"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Religiões Cristãs"
+                        SmartTileWithLabel:
+                            text: "Religiões Afro-brasileiras"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Religiões Afro-brasileiras"
+                        SmartTileWithLabel:
+                            text: "Folclore Brasileiro"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Folclore Brasileiro"
+                        SmartTileWithLabel:
+                            text: "Literatura Brasileira"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Literatura Brasileira"
+                        SmartTileWithLabel:
+                            text: "Literatura de Cordel"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Literatura de Cordel"

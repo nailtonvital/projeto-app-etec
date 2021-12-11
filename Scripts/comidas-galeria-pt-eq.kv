@@ -1,0 +1,118 @@
+#galeria-comidas-pt-eq
+        MDScreen: 
+            name: "comidas-pt-eq"
+            MDFloatLayout:
+                orientation: "vertical"
+                MDIconButton:
+                    icon:"arrow-left"
+                    pos_hint: {"center_y": .95}
+                    on_release: manager.current = "pt-eq"
+                MDLabel:
+                    id: title
+                    text: "Culinária"
+                    pos_hint: {"center_y": .95}
+                    halign:"center"
+                    font_name:"assets/Fonts/Poppins-Regular"
+                    font_size: "20sp"
+                ScrollView:
+                    do_scroll_y: True
+                    do_scroll_x: False
+                    pos_hint:{"center_x": .5, "y": 0}
+                    size_hint_y: .9
+                    bar_width: 0
+                    MDGridLayout:
+                        cols: 2
+                        row_default_height: (self.width - self.cols*self.spacing[0]) / self.cols
+                        row_force_default: True
+                        adaptive_height: True
+                        padding: dp(4), dp(4)
+                        spacing: dp(4)
+
+                        SmartTileWithLabel:
+                            text: "Ceviche"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Ceviche"
+                        SmartTileWithLabel:
+                            text: "Encocado de Pescado"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Encocado de Pescado"
+                        SmartTileWithLabel:
+                            text: "Caçarola de Mariscos"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Caçarola de Mariscos"
+                        SmartTileWithLabel:
+                            text: "Cocadas Blancas y Cocadas Negras"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Cocadas Blancas y Cocadas Negras"
+                        SmartTileWithLabel:
+                            text: "Cangrejos "
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Cangrejos "
+                        SmartTileWithLabel:
+                            text: "Verde"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Verde"
+                        SmartTileWithLabel:
+                            text: "Locro"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Locro"
+                        SmartTileWithLabel:
+                            text: "Fritada"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Fritada"
+                        SmartTileWithLabel:
+                            text: "Cuy Asado"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Cuy Asado"
+                        SmartTileWithLabel:
+                            text: "Figos com Queijo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Figos com Queijo"
+                        SmartTileWithLabel:
+                            text: "Colada Morada Con Guagua de Pan"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Colada Morada Con Guagua de Pan"
+                        SmartTileWithLabel:
+                            text: "Allullas Con Queso de Hoja"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Allullas Con Queso de Hoja"
+                        SmartTileWithLabel:
+                            text: "Maito de Pescado"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Maito de Pescado"
+                        SmartTileWithLabel:
+                            text: "Seco de Guanta"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Seco de Guanta"
+                        SmartTileWithLabel:
+                            text: "Chicha"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Chicha"
+                        SmartTileWithLabel:
+                            text: "Casabe de Yuca"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Casabe de Yuca"
+                        SmartTileWithLabel:
+                            text: "Caldo de Corroncho"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Caldo de Corroncho"
+                        SmartTileWithLabel:
+                            text: "Lagosta"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Lagosta"
+                        SmartTileWithLabel:
+                            text: "Ceviche de Chancalagua"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Ceviche de Chancalagua"
+                        SmartTileWithLabel:
+                            text: "Viche de Pescado"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Viche de Pescado"
+                        SmartTileWithLabel:
+                            text: "Flan de Coco"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Flan de Coco"
+                        SmartTileWithLabel:
+                            text: "Bacalhau Com Batatas"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Bacalhau Com Batatas"

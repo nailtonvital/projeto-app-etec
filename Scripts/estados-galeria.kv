@@ -1,0 +1,438 @@
+#galeria
+MDScreen:
+    name: "gallery"
+    MDFloatLayout:
+        orientation: "vertical"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "brasil"
+        MDLabel:
+            id: title
+            text: "Estados"
+            pos_hint: {"center_y": .95}
+            halign:"center"
+            font_name:"assets/fonts/Poppins-Regular"
+            font_size: "20sp"
+        ScrollView:
+            do_scroll_y: True
+            do_scroll_x: False
+            pos_hint:{"center_x": .5, "y": 0}
+            size_hint_y: .9
+            bar_width: 0
+            MDGridLayout:
+                cols: 2
+                row_default_height: (self.width - self.cols*self.spacing[0]) / self.cols
+                row_force_default: True
+                adaptive_height: True
+                padding: dp(4), dp(4)
+                spacing: dp(4)
+
+                SmartTileWithLabel:
+                    text: "Rio de Janeiro"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio de Janeiro"
+                SmartTileWithLabel:
+                    text: "Acre"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Acre"
+                SmartTileWithLabel:
+                    text: "Alagoas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Alagoas"
+                SmartTileWithLabel:
+                    text: "Amapá"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Amapá"
+                SmartTileWithLabel:
+                    text: "Amazonas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Amazonas"
+                SmartTileWithLabel:
+                    text: "Bahia"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Bahia"
+                SmartTileWithLabel:
+                    text: "Fortaleza"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Fortaleza"
+                SmartTileWithLabel:
+                    text: "Distrito Federal"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Distrito Federal"
+                SmartTileWithLabel:
+                    text: "Espírito Santo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Espírito Santo"
+                SmartTileWithLabel:
+                    text: "Goiás"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Goiás"
+                SmartTileWithLabel:
+                    text: "Maranhão"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Maranhão"
+                SmartTileWithLabel:
+                    text: "Mato Grosso"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Mato Grosso"
+                SmartTileWithLabel:
+                    text: "Mato Grosso do Sul"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Mato Grosso do Sul"
+                SmartTileWithLabel:
+                    text: "Minas Gerais"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Minas Gerais"
+                SmartTileWithLabel:
+                    text: "Pará"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pará"
+                SmartTileWithLabel:
+                    text: "Paraíba"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Paraíba"
+                SmartTileWithLabel:
+                    text: "Paraná"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Paraná"
+                SmartTileWithLabel:
+                    text: "Pernambuco"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pernambuco"
+                SmartTileWithLabel:
+                    text: "Piauí"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Piauí"
+                SmartTileWithLabel:
+                    text: "Rio Grande do Norte"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio Grande do Norte"
+                SmartTileWithLabel:
+                    text: "Rio Grande do Sul"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio Grande do Sul"
+                SmartTileWithLabel:
+                    text: "Rondônia"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rondônia"
+                SmartTileWithLabel:
+                    text: "Roraima"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Roraima"
+                SmartTileWithLabel:
+                    text: "Santa Catarina"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Santa Catarina"
+                SmartTileWithLabel:
+                    text: "São Paulo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="São Paulo"
+                SmartTileWithLabel:
+                    text: "Sergipe"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Sergipe"
+                SmartTileWithLabel:
+                    text: "Tocantins"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Tocantins"
+                SmartTileWithLabel:
+                    text: "Acre"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Acre"
+                SmartTileWithLabel:
+                    text: "Alagoas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Alagoas"
+                SmartTileWithLabel:
+                    text: "Amapá"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Amapá"
+                SmartTileWithLabel:
+                    text: "Amazonas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Amazonas"
+                SmartTileWithLabel:
+                    text: "Bahía"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Bahía"
+                SmartTileWithLabel:
+                    text: "Ceará"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Ceará"
+                SmartTileWithLabel:
+                    text: "Distrito Federal"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Distrito Federal"
+                SmartTileWithLabel:
+                    text: "Espírito Santo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Espírito Santo"
+                SmartTileWithLabel:
+                    text: "Maranhão"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Maranhão"
+                SmartTileWithLabel:
+                    text: "Mato Grosso"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Mato Grosso"
+                SmartTileWithLabel:
+                    text: "Mato Grosso do Sul"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Mato Grosso do Sul"
+                SmartTileWithLabel:
+                    text: "Minas Gerais"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Minas Gerais"
+                SmartTileWithLabel:
+                    text: "Pará"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pará"
+                SmartTileWithLabel:
+                    text: "Paraná"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Paraná"
+                SmartTileWithLabel:
+                    text: "Paraíba"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Paraíba"
+                SmartTileWithLabel:
+                    text: "Pernambuco"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pernambuco"
+                SmartTileWithLabel:
+                    text: "Rio Grande do Sul"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio Grande do Sul"
+                SmartTileWithLabel:
+                    text: "Piauí"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Piauí"
+                SmartTileWithLabel:
+                    text: "Roraima"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Roraima"
+                SmartTileWithLabel:
+                    text: "Rio de Janeiro"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio de Janeiro"
+                SmartTileWithLabel:
+                    text: "Rio Grande do Norte"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio Grande do Norte"
+                SmartTileWithLabel:
+                    text: "Rio Grande do Sul"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rio Grande do Sul"
+                SmartTileWithLabel:
+                    text: "Rondonia"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Rondonia"
+                SmartTileWithLabel:
+                    text: "Roraima"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Roraima"
+                SmartTileWithLabel:
+                    text: "Santa Catarina"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Santa Catarina"
+                SmartTileWithLabel:
+                    text: "Goiás"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Goiás"
+                SmartTileWithLabel:
+                    text: "São Paulo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="São Paulo"
+                SmartTileWithLabel:
+                    text: "Azuay"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Azuay"
+                SmartTileWithLabel:
+                    text: "Bolívar"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Bolívar"
+                SmartTileWithLabel:
+                    text: "Cañar"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Cañar"
+                SmartTileWithLabel:
+                    text: "Carchi"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Carchi"
+                SmartTileWithLabel:
+                    text: "Chimborazo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Chimborazo"
+                SmartTileWithLabel:
+                    text: "Cotopaxi"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Cotopaxi"
+                SmartTileWithLabel:
+                    text: "El Oro"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="El Oro"
+                SmartTileWithLabel:
+                    text: "Esmeraldas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Esmeraldas"
+                SmartTileWithLabel:
+                    text: "Galápagos"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Galápagos"
+                SmartTileWithLabel:
+                    text: "Guayas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Guayas"
+                SmartTileWithLabel:
+                    text: "Imbabura"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Imbabura"
+                SmartTileWithLabel:
+                    text: "Loja"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Loja"
+                SmartTileWithLabel:
+                    text: "Los Ríos"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Los Ríos"
+                SmartTileWithLabel:
+                    text: "Manabí"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Manabí"
+                SmartTileWithLabel:
+                    text: "Morona Santiago"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Morona Santiago"
+                SmartTileWithLabel:
+                    text: "Napo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Napo"
+                SmartTileWithLabel:
+                    text: "Orellana"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Orellana"
+                SmartTileWithLabel:
+                    text: "Pastaza"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pastaza"
+                SmartTileWithLabel:
+                    text: "Pichincha"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pichincha"
+                SmartTileWithLabel:
+                    text: "Santa Elena"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Santa Elena"
+                SmartTileWithLabel:
+                    text: "Santo Domingo de los Tsáchilas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Santo Domingo de los Tsáchilas"
+                SmartTileWithLabel:
+                    text: "Sucumbiós"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Sucumbiós"
+                SmartTileWithLabel:
+                    text: "Tungurahua"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Tungurahua"
+                SmartTileWithLabel:
+                    text: "Zamora-Chinchipe"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Zamora-Chinchipe"
+                SmartTileWithLabel:
+                    text: "Azuay"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Azuay"
+                SmartTileWithLabel:
+                    text: "Bolívar"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Bolívar"
+                SmartTileWithLabel:
+                    text: "Cañar"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Cañar"
+                SmartTileWithLabel:
+                    text: "Carchi"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Carchi"
+                SmartTileWithLabel:
+                    text: "Chimborazo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Chimborazo"
+                SmartTileWithLabel:
+                    text: "Cotopaxi"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Cotopaxi"
+                SmartTileWithLabel:
+                    text: "El Oro"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="El Oro"
+                SmartTileWithLabel:
+                    text: "Esmeraldas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Esmeraldas"
+                SmartTileWithLabel:
+                    text: "Galápagos"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Galápagos"
+                SmartTileWithLabel:
+                    text: "Guayas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Guayas"
+                SmartTileWithLabel:
+                    text: "Imbabura"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Imbabura"
+                SmartTileWithLabel:
+                    text: "Loja"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Loja"
+                SmartTileWithLabel:
+                    text: "Los Ríos"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Los Ríos"
+                SmartTileWithLabel:
+                    text: "Manabí"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Manabí"
+                SmartTileWithLabel:
+                    text: "Morona Santiago"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Morona Santiago"
+                SmartTileWithLabel:
+                    text: "Napo"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Napo"
+                SmartTileWithLabel:
+                    text: "Orellana"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Orellana"
+                SmartTileWithLabel:
+                    text: "Pastaza"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pastaza"
+                SmartTileWithLabel:
+                    text: "Pichincha"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Pichincha"
+                SmartTileWithLabel:
+                    text: "Santa Elena"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Santa Elena"
+                SmartTileWithLabel:
+                    text: "Santo Domingo de los Tsáchilas"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Santo Domingo de los Tsáchilas"
+                SmartTileWithLabel:
+                    text: "Sucumbiós"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Sucumbiós"
+                SmartTileWithLabel:
+                    text: "Tungurahua"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Tungurahua"
+                SmartTileWithLabel:
+                    text: "Zamora-Chinchipe"
+                    font_name: "assets/fonts/Poppins-Regular"
+                    on_release: manager.current="Zamora-Chinchipe"
