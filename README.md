@@ -1,11 +1,12 @@
 <h1 align="center">Brazil/Ecuador App Project</h1>
-<p align="center">🚀 A app that allows know more about Brazil and Ecuador</p>
+<p align="center">A app that allows know more about Brazil and Ecuador.</p>
+
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/app-mockup.png)
 <p align="center">
- <a href="#objetivo">English</a> •
- <a href="#roadmap">Português Brasileiro</a> • 
- <a href="#tecnologias">Español</a> 
+ <a href="#readme-en.md">English</a> •
+ <a href="#readme-pt.md">Português Brasileiro</a> • 
+ <a href="#readme-es.md">Español</a> 
 </p>
 
 Content Table
@@ -20,7 +21,8 @@ Content Table
 
 # About
 
-A app for show the main features about the Brazil and Ecuador.
+A app for show the main features about the Brazil and Ecuador, like foods, attracions, etc.
+
 The idea of the app came up from a partnership with two schools, "ETEC ALBERT EINSTEIN" and other school.
 
 # Features
@@ -50,6 +52,7 @@ The app is very simple and have just a few features.
 - Attracions.
 	> Gallery of the main attracions of the countries.
 
+<p align="center">🚧 APK available soon🚧</p>
 
 # Structure
 
