@@ -14,6 +14,7 @@ Content Table
 <!--ts-->
    * [About](#about)
    * [Features](#features)
+   * [Installation](#installation)
    * [Structure](#structure)
    * [Tools](#tools)
    * [Credits](#credits)
@@ -52,7 +53,8 @@ The app is very simple and have just a few features.
 - Attracions.
 	> Gallery of the main attracions of the countries.
 
-<p align="center">🚧 APK available soon🚧</p>
+# Installation
+🚧 Available soon🚧
 
 # Structure
 
