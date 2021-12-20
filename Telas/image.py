@@ -7,20 +7,20 @@ Window.size = (300, 600)
 KV = '''
 ScreenManager:
     id: manager
-    MDScreen:
-        name: "rio"
+        MDScreen:
+        name: "Rio de Janeiro pt-br"
         MDCard:
             MDFloatLayout:
                 FitImage:
                     id: bg_image
-                    #source: "../assets/images/rio.jpg"
+                    #source: "../assets/images/bd/cidades/1.jpg"
                     size_hint_y: .57
                     pos_hint: {"top": 1}
                     radius: 0, 0, 30, 30
                 MDIconButton:
                     icon:"arrow-left"
-                    pos_hint: {"center_y": .95}
-                    on_release: manager.current = "comidas"
+                    pos_hint: {"center_y": .95, "center_x": .95}
+                    on_release: manager.current = "pt-br"
             
                 
                 MDLabel:
@@ -62,9 +62,7 @@ ScreenManager:
                         height: self.texture_size[1]
                         theme_text_color: "Primary"
                         font_size: "10sp"
-
-
-
+    
 '''
 
 
