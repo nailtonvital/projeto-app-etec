@@ -2,11 +2,10 @@
 <p align="center">A app that allows know more about Brazil and Ecuador.</p>
 
 
-![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/app-mockup.png)
 <p align="center">
- <a href="#readme-en.md">English</a> •
- <a href="#readme-pt.md">Português Brasileiro</a> • 
- <a href="#readme-es.md">Español</a> 
+ <a href="https://github.com/nailtonvital/projeto-app-etec/blob/b/README.md">English</a> •
+ <a href="https://github.com/nailtonvital/projeto-app-etec/blob/b/readme-pt.md">Português Brasileiro</a> • 
+ <a href="https://github.com/nailtonvital/projeto-app-etec/blob/b/readme-es.md">Español</a> 
 </p>
 
 Content Table
@@ -31,27 +30,61 @@ The idea of the app came up from a partnership with two schools, "ETEC ALBERT EI
 The app is very simple and have just a few features.
 
 - Home.
-	> On the home screen we had title, start button and a dark mode toogle feature.
+
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/home-dark.png)
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/home-light.png)
+
+> On the home screen we had title, start button and a dark mode toogle feature.
+
 - Choose the Language.
-	> On the choose language screen we had a carousell that ables see the photo of the "language" and choose the language.
+
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/idioma.png)
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/idioma-es.png)
+
+> On the choose language screen we had a carousell that ables see the photo of the "language" and choose the language.
 
 - Country choose.
-	> On the contry choose screen we had a carousell that ables see the photo of the country and choose the country.
+
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pais.png)
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pais-es.png)
+
+> On the contry choose screen we had a carousell that ables see the photo of the country and choose the country.
 
 - Country Home.
-	> Country title, local foods, behaviors, and attracions buttons and a list of capitals of each state.
 
-- Country Home.
-	> Country title, local foods, behaviors, and attracions buttons and a list of capitals of each state.
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/brazil.png)
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/brazil-dark.png)
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/ecuador-light-es.png)
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/ecuador-dark.png)
+
+> Country title, local foods, behaviors, and attracions buttons and a list of capitals of each state.
 
 - Foods.
-	> Gallery of the main traditional foods.
+
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-food-gallery.png)
+
+> Gallery of the main traditional foods.
  
 - Behaviors.
-	> Gallery of the main behaviors.
+
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-behavior-gallery.png)
+
+> Gallery of the main behaviors.
 
 - Attracions.
-	> Gallery of the main attracions of the countries.
+
+![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-tourism-gallery.png)
+
+> Gallery of the main attracions of the countries.
+
+- About.
+
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/brasilia-about.png)
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/ceara-about.png)
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/recife-about.png)
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/machala-about.png)
+
+> A screen that allows know more about a specific thing.
 
 # Installation
 🚧 Available soon🚧
