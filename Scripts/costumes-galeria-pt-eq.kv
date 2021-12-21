@@ -1,0 +1,126 @@
+#galeria-costumes-pt-eq
+        MDScreen: 
+            name: "costumes-pt-eq"
+            MDFloatLayout:
+                orientation: "vertical"
+                MDIconButton:
+                    icon:"arrow-left"
+                    pos_hint: {"center_y": .95}
+                    on_release: manager.current = "pt-eq"
+                MDLabel:
+                    id: title
+                    text: "Costumes"
+                    pos_hint: {"center_y": .95}
+                    halign:"center"
+                    font_name:"assets/Fonts/Poppins-Regular"
+                    font_size: "20sp"
+                ScrollView:
+                    do_scroll_y: True
+                    do_scroll_x: False
+                    pos_hint:{"center_x": .5, "y": 0}
+                    size_hint_y: .9
+                    bar_width: 0
+                    MDGridLayout:
+                        cols: 2
+                        row_default_height: (self.width - self.cols*self.spacing[0]) / self.cols
+                        row_force_default: True
+                        adaptive_height: True
+                        padding: dp(4), dp(4)
+                        spacing: dp(4)
+
+                        SmartTileWithLabel:
+                            text: "La Diablada de Píllaro - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="La Diablada de Píllaro - Sierra"
+                        SmartTileWithLabel:
+                            text: "Rodeo Montubio - Litoral"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Rodeo Montubio - Litoral"
+                        SmartTileWithLabel:
+                            text: "Amorfinos - Litoral"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Amorfinos - Litoral"
+                        SmartTileWithLabel:
+                            text: "Os Carnavais – A nível nacional"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Os Carnavais – A nível nacional"
+                        SmartTileWithLabel:
+                            text: "Festa das flores e frutas - Serra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festa das flores e frutas - Serra"
+                        SmartTileWithLabel:
+                            text: "Pawkar raymi - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Pawkar raymi - Sierra"
+                        SmartTileWithLabel:
+                            text: "Quarta-feira de cinzas - em todo o país"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Quarta-feira de cinzas - em todo o país"
+                        SmartTileWithLabel:
+                            text: "Quaresma - Nacionalmente"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Quaresma - Nacionalmente"
+                        SmartTileWithLabel:
+                            text: "Semana Santa - Pais Todo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Semana Santa - Pais Todo"
+                        SmartTileWithLabel:
+                            text: "Kasama - Costa"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Kasama - Costa"
+                        SmartTileWithLabel:
+                            text: "Corpus Christi - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Corpus Christi - Sierra"
+                        SmartTileWithLabel:
+                            text: "Paseo del Chagra - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Paseo del Chagra - Sierra"
+                        SmartTileWithLabel:
+                            text: "La Mama Negra - Serra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="La Mama Negra - Serra"
+                        SmartTileWithLabel:
+                            text: "Inti Raymi - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Inti Raymi - Sierra"
+                        SmartTileWithLabel:
+                            text: "Festival Yamor - Otavalo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festival Yamor - Otavalo"
+                        SmartTileWithLabel:
+                            text: "Festa do Jora - Cotacachi"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festa do Jora - Cotacachi"
+                        SmartTileWithLabel:
+                            text: "Festival Chonta - Oriente"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festival Chonta - Oriente"
+                        SmartTileWithLabel:
+                            text: "Fox Hunting"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Fox Hunting"
+                        SmartTileWithLabel:
+                            text: "Killa Raymi - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Killa Raymi - Sierra"
+                        SmartTileWithLabel:
+                            text: "Festa das Cruzes - Serra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Festa das Cruzes - Serra"
+                        SmartTileWithLabel:
+                            text: "Dia de Finados - Nacionalmente"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Dia de Finados - Nacionalmente"
+                        SmartTileWithLabel:
+                            text: "Passes del Niño - Sierra"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Passes del Niño - Sierra"
+                        SmartTileWithLabel:
+                            text: "Natal – Pais todo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Natal – Pais todo"
+                        SmartTileWithLabel:
+                            text: "Ano Velho – Pais todo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Ano Velho – Pais todo"

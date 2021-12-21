@@ -1,0 +1,110 @@
+#galeria-comidas-pt-br
+MDScreen: 
+    name: "comidas-pt-br"
+    MDFloatLayout:
+        orientation: "vertical"
+        MDIconButton:
+            icon:"arrow-left"
+            pos_hint: {"center_y": .95}
+            on_release: manager.current = "pt-br"
+        MDLabel:
+            id: title
+            text: "Culinária"
+            pos_hint: {"center_y": .95}
+            halign:"center"
+            font_name:"assets/Fonts/Poppins-Regular"
+            font_size: "20sp"
+        ScrollView:
+            do_scroll_y: True
+            do_scroll_x: False
+            pos_hint:{"center_x": .5, "y": 0}
+            size_hint_y: .9
+            bar_width: 0
+            MDGridLayout:
+                cols: 2
+                row_default_height: (self.width - self.cols*self.spacing[0]) / self.cols
+                row_force_default: True
+                adaptive_height: True
+                padding: dp(4), dp(4)
+                spacing: dp(4)
+
+                        SmartTileWithLabel:
+                            text: "Feijoada"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Feijoada"
+                        SmartTileWithLabel:
+                            text: "Cocada"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Cocada"
+                        SmartTileWithLabel:
+                            text: "Açaí"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Açaí"
+                        SmartTileWithLabel:
+                            text: "Acarajé"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Acarajé"
+                        SmartTileWithLabel:
+                            text: "Beijinho"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Beijinho"
+                        SmartTileWithLabel:
+                            text: "Bolinho de chuva"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Bolinho de chuva"
+                        SmartTileWithLabel:
+                            text: "Carne de sol"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Carne de sol"
+                        SmartTileWithLabel:
+                            text: "Coxinha"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Coxinha"
+                        SmartTileWithLabel:
+                            text: "Farofa"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Farofa"
+                        SmartTileWithLabel:
+                            text: "Mandioca"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Mandioca"
+                        SmartTileWithLabel:
+                            text: "Moqueca"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Moqueca"
+                        SmartTileWithLabel:
+                            text: "Paçoca"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Paçoca"
+                        SmartTileWithLabel:
+                            text: "Pão de queijo"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Pão de queijo"
+                        SmartTileWithLabel:
+                            text: "Pastel"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Pastel"
+                        SmartTileWithLabel:
+                            text: "Pudim"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Pudim"
+                        SmartTileWithLabel:
+                            text: "Quindim"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Quindim"
+                        SmartTileWithLabel:
+                            text: "Salpicão"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Salpicão"
+                        SmartTileWithLabel:
+                            text: "Tapioca"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Tapioca"
+                        SmartTileWithLabel:
+                            text: "Brigadeiro"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Brigadeiro"
+                        SmartTileWithLabel:
+                            text: "Vatapá"
+                            font_name: "assets/Fonts/Poppins-Regular"
+                            on_release: manager.current="Vatapá"
