@@ -67,7 +67,7 @@ The app is very simple and have just a few features.
  
 - Behaviors.
 
-![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-behavior-gallery.png)
+![](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/behaviors.jpg)
 
 > Gallery of the main behaviors.
 
@@ -79,10 +79,7 @@ The app is very simple and have just a few features.
 
 - About.
 
-![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/brasilia-about.png)
-![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/ceara-about.png)
-![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/recife-about.png)
-![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/machala-about.png)
+![about](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/about.jpg)
 
 > A screen that allows know more about a specific thing.
 
