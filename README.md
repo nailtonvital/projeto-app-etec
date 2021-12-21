@@ -103,3 +103,5 @@ Main contributors:
 
 - [Nailton Vital](https://github.com/nailtonvital)
 - [Maicon Oliveira](https://github.com/maicxn)
+- [Viktor Santos](https://github.com/KiktorTech)
+- [Vitor Hugo](https://github.com/Vitorugoogle)
