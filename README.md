@@ -1,3 +1,4 @@
+![logo](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/Logo%20projeto.png)
 <h1 align="center">Brazil/Ecuador App Project</h1>
 <p align="center">A app that allows know more about Brazil and Ecuador.</p>
 
