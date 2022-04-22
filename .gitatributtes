@@ -1,0 +1,3 @@
+* linguist-vendored
+*.raku linguist-vendored=false
+*.python linguist-detectable=true
