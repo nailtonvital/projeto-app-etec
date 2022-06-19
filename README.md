@@ -30,28 +30,28 @@ The idea of the app came up from a partnership with two schools, "ETEC ALBERT EI
 
 The app is very simple and have just a few features.
 
-## Home.
+### Home.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/home-dark.png)
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/home-light.png)
 
 > On the home screen we had title, start button and a dark mode toogle feature.
 
-- Choose the Language.
+### Choose the Language.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/idioma.png)
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/idioma-es.png)
 
 > On the choose language screen we had a carousell that ables see the photo of the "language" and choose the language.
 
-- Country choose.
+### Country choose.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pais.png)
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pais-es.png)
 
 > On the contry choose screen we had a carousell that ables see the photo of the country and choose the country.
 
-- Country Home.
+### Country Home.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/brazil.png)
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/brazil-dark.png)
@@ -60,25 +60,25 @@ The app is very simple and have just a few features.
 
 > Country title, local foods, behaviors, and attracions buttons and a list of capitals of each state.
 
-## Foods.
+### Foods.
 
 ![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-food-gallery.png)
 
 > Gallery of the main traditional foods.
  
-## Behaviors.
+### Behaviors.
 
 ![](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/behaviors.jpg)
 
 > Gallery of the main behaviors.
 > 
-## Attracions.
+### Attracions.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-tourism-gallery.png)
 
 > Gallery of the main attracions of the countries.
 
-## About.
+### About.
 
 ![about](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/about.jpg)
 
