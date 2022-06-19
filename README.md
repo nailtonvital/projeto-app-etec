@@ -3,12 +3,6 @@
 <p align="center">A app that allows know more about Brazil and Ecuador.</p>
 
 
-<p align="center">
- <a href="https://github.com/nailtonvital/projeto-app-etec/blob/b/README.md">English</a> •
- <a href="https://github.com/nailtonvital/projeto-app-etec/blob/b/readme-pt.md">Português Brasileiro</a> • 
- <a href="https://github.com/nailtonvital/projeto-app-etec/blob/b/readme-es.md">Español</a> 
-</p>
-
 Content Table
 =================
 <!--ts-->
