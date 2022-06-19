@@ -30,7 +30,7 @@ The idea of the app came up from a partnership with two schools, "ETEC ALBERT EI
 
 The app is very simple and have just a few features.
 
-- Home.
+## Home.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/home-dark.png)
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/home-light.png)
@@ -60,25 +60,25 @@ The app is very simple and have just a few features.
 
 > Country title, local foods, behaviors, and attracions buttons and a list of capitals of each state.
 
-- Foods.
+## Foods.
 
 ![](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-food-gallery.png)
 
 > Gallery of the main traditional foods.
  
-- Behaviors.
+## Behaviors.
 
 ![](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/behaviors.jpg)
 
 > Gallery of the main behaviors.
-
-- Attracions.
+> 
+## Attracions.
 
 ![alt text](https://github.com/nailtonvital/projeto-app-etec/blob/b/screenshots/pt-br-tourism-gallery.png)
 
 > Gallery of the main attracions of the countries.
 
-- About.
+## About.
 
 ![about](https://github.com/nailtonvital/projeto-app-etec/blob/b/mockup/about.jpg)
 
